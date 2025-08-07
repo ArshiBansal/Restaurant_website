@@ -1,0 +1,473 @@
+/* External CSS file */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.playfair-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar height */
+.custom-navbar {
+    height: 20vh;
+}
+
+/* Logo height */
+.logo-img {
+    height: 18vh;
+    width: 18vw;
+}
+
+/* Nav link styles */
+.navbar-nav .nav-link {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: #000;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #fc6f51 !important;
+}
+
+/* Button style */
+.btn-reserve {
+    background-color: #fc6f51;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.05rem;
+    text-decoration: none;
+}
+
+.btn-reserve:hover {
+    background-color: #e85c42;
+    color: white;
+}
+
+/* Toggler icon (black color) */
+.navbar-toggler-icon.custom-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Collapsed menu style */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        max-height: 80vh;
+        /* limit height */
+        overflow-y: auto;
+        /* allow scrolling if content exceeds */
+        background-color: white;
+        padding: 1rem 0;
+        text-align: center;
+        z-index: 9999;
+        /* ensures it appears above other items */
+    }
+
+    body,
+    html {
+        overflow-y: auto;
+        /* ensures scroll works */
+    }
+
+    .navbar-collapse.collapse.show {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .navbar-nav .nav-link {
+        color: black !important;
+        padding: 10px 0;
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav .btn-reserve {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.playfair-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Background image section */
+.reservation-section {
+    position: relative;
+    background: url('https://i.pinimg.com/736x/4d/b7/d3/4db7d318d6437d172b6c98766ea4fb38.jpg') center center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 16px;
+    /* Increased top/bottom padding */
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Overlay with higher transparency */
+.reservation-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+    /* More transparent */
+    z-index: 1;
+}
+
+/* Heading and description */
+.reservation-section h2,
+.reservation-section p {
+    position: relative;
+    z-index: 2;
+}
+
+.reservation-section h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.reservation-section p {
+    max-width: 600px;
+    margin: 0 auto 40px;
+    font-size: 1.2rem;
+    color: #eee;
+}
+
+/* Centering the form */
+.reservation-form-wrapper {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+}
+
+/* Reservation form styling */
+.reservation-form {
+    background-color: #ff9073;
+    padding: 30px 40px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.reservation-form input,
+.reservation-form select {
+    width: 100%;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.95rem;
+    background-color: #ffa895;
+    color: #333;
+}
+
+.reservation-form input::placeholder {
+    color: #333;
+}
+
+.reservation-form input:focus,
+.reservation-form select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+}
+
+.reservation-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.reservation-form button:hover {
+    background-color: #f5f5f5;
+    color: #000;
+}
+
+/* MAP SECTION */
+.map-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 400px;
+    border: 0;
+}
+
+/* INFO SECTION */
+.info-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.info-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.info-block {
+    flex: 1 1 280px;
+    border-radius: 8px;
+    padding: 25px;
+    box-sizing: border-box;
+}
+
+.info-dark {
+    background-color: #222;
+    color: #fff;
+}
+
+.info-light {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.btn-contact {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #ff5e00;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    color: #000;
+    font-size: 16px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .info-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .info-block {
+        width: 100%;
+    }
+}
+
+/* Remove unwanted white line between sections */
+.newsletter-section {
+    background-color: #1f1f1f;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+.site-footer {
+    background-color: #1f1f1f;
+    border-top: none !important;
+    margin-top: 0 !important;
+    padding-top: 20px;
+    color: #ccc;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+.testimonial-card {
+    border: 1px solid #eee;
+    padding: 2rem;
+    margin: 1rem 0;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
+    height: 250px;
+}
+
+.testimonial-img {
+    width: 120px;
+    height: 120px;
+    margin-top: -85px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Extra small devices (phones, <576px) */
+@media (max-width: 575.98px) {
+  .testimonial-card {
+    min-height: 300px;
+  }
+}
+
+/* Small devices (≥576px and <768px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .testimonial-card {
+    min-height: 300px;
+  }
+}
+
+/* Medium devices (≥768px and <992px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .testimonial-card {
+    min-height: 450px;
+  }
+}
+
+/* Large devices (≥992px and <1200px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .testimonial-card {
+    min-height: 350px;
+  }
+}
+
+/* Extra large devices (≥1200px) */
+@media (min-width: 1200px) {
+  .testimonial-card {
+    min-height: 300px;
+  }
+}
+
+.testimonial-name {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.testimonial-role {
+    color: #999;
+    font-size: 0.9rem;
+} 
+
+.navbar-toggler-icon.custom-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Make collapsed menu white with padding */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: white;
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    .navbar-nav .nav-link {
+        color: black !important;
+        padding: 10px 0;
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav .btn-reserve {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+
+/* ✅ More spacing between rows on small screens */
+@media (max-width: 576px) {
+    .testimonial-card {
+        margin-bottom: 1rem;
+        /* increases space between rows on small screens */
+    }
+}
+
+/* about */
+.about-section {
+    background: url('about.jpg') center/cover no-repeat;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.col {
+    flex: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.center-content {
+    flex: 2;
+    text-align: center;
+    color: white;
+}
+
+.center-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.center-content p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+    .col {
+        flex: 1 1 100%;
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    .center-content {
+        flex: 1;
+    }
+}
