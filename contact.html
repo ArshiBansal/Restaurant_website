@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>The Spice of South</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 6 (Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Font (Playfair Display) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- Optional: jQuery (only if you need it for other custom scripts) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Bootstrap 5 JS (bundle includes Popper.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-white custom-navbar">
+        <div class="container d-flex align-items-center">
+
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="nav.png" alt="The Spice of South Logo" class="logo-img"
+                    style="height: 18vh; width: 18vw; padding: 2px;" />
+            </a>
+
+            <!-- Mobile Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse justify-content-end" id="navContent">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="testimonials.html">Testimonials</a>
+                    </li>
+                    <li class="nav-item mr-10">
+                        <a class="nav-link active text-highlight" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item ml-7">
+                        <a href="#" class="btn btn-reserve">Make a Reservation</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="about-section">
+        <div class="about-overlay">
+            <div class="row">
+                <div class="col-2"></div>
+
+                <div class="col-8" style="color: white;">
+                    <center>
+                        <h1 style="margin-bottom: 15px;">Contact Us</h1>
+                    </center>
+                    <p>
+                        Feel free to send us a message if you have any questions.
+                        We’re always happy to hear from you and will get back to you as soon as possible.
+                        Whether it’s feedback, suggestions, or just to say hello, we value your thoughts.
+                    </p>
+                </div>
+
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-info">
+        <div class="container h-100 d-flex align-items-center">
+            <div class="row text-center text-md-left w-100">
+
+                <!-- Opening Time -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="font-weight-bold mb-3">Opening Time</h4>
+                    <p>Working Days <span class="float-right">9:00AM – 6:00PM</span></p>
+                    <hr>
+                    <p>Saturday <span class="float-right">11:00AM – 5:00PM</span></p>
+                    <hr>
+                    <p>Sunday <span class="float-right">Closed</span></p>
+                </div>
+
+                <!-- Get Direction -->
+                <div class="col-md-4 mb-4 get-direction">
+                    <h4 class="font-weight-bold mb-3">Get Direction</h4>
+                    <p>85 Bay Meadows Drive Woodstock,<br>GA 300188 United States</p>
+                    <a href="#" class="btn btn-burnt-orange mt-3">View On Map</a>
+                </div>
+
+                <!-- Get In Touch -->
+                <div class="col-md-4 mb-4">
+                    <h4 class="font-weight-bold mb-3">Get In Touch</h4>
+                    <p>+123 456 7890</p>
+                    <p>info@example.com</p>
+                    <div>
+                        <a href="#" class="social-icon mx-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon mx-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon mx-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon mx-2"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="talk-area">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Image Column -->
+                <div class="col-md-6 p-0">
+                    <img src="food.jpg" alt="Delicious Dish" class="talk-img">
+                </div>
+
+                <!-- Form Column -->
+                <div class="col-md-6 talk-form-box">
+                    <h2 class="talk-title">Let's Have a Talk</h2>
+                    <p class="talk-text">
+                        It is a long established fact that a reader will be distracted by
+                        the readable content of a page when looking.
+                    </p>
+
+                    <form>
+                        <input type="text" placeholder="Full Name" class="talk-input mb-3">
+                        <input type="text" placeholder="Phone Number" class="talk-input mb-3">
+                        <input type="email" placeholder="Your Email Address" class="talk-input mb-3">
+                        <textarea placeholder="Message" rows="4" class="talk-input mb-3"></textarea>
+                        <button type="submit" class="talk-btn">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <div class="container text-center py-5">
+            <h2 class="text-white font-weight-bold">Get News & Offers</h2>
+            <p class="text-white">It is a long established fact that a reader will be distracted by the readable content
+                of a
+                page when looking at its layout.</p>
+            <a href="#" class="btn btn-warning mt-3 px-4">Contact Us</a>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="site-footer text-center py-4">
+        <div class="container">
+            <p class="mb-0 text-white">Copyright © 2025
+                <a href="#" class="text-light">thespiceofsouth</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            let isValid = true;
+
+            const name = document.getElementById("name");
+            const phone = document.getElementById("phone");
+            const email = document.getElementById("email");
+            const message = document.getElementById("message");
+
+            // Reset classes
+            [name, phone, email, message].forEach(input => {
+                input.classList.remove("invalid", "valid");
+            });
+
+            // Name validation
+            if (name.value.trim() === "") {
+                name.classList.add("invalid");
+                isValid = false;
+            } else {
+                name.classList.add("valid");
+            }
+
+            // Phone validation
+            if (!/^\d{7,15}$/.test(phone.value.trim())) {
+                phone.classList.add("invalid");
+                isValid = false;
+            } else {
+                phone.classList.add("valid");
+            }
+
+            // Email validation
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email.value.trim())) {
+                email.classList.add("invalid");
+                isValid = false;
+            } else {
+                email.classList.add("valid");
+            }
+
+            // Message validation
+            if (message.value.trim().length < 5) {
+                message.classList.add("invalid");
+                isValid = false;
+            } else {
+                message.classList.add("valid");
+            }
+
+            // Success
+            if (isValid) {
+                alert("Form submitted successfully!");
+                document.getElementById("contactForm").reset();
+                [name, phone, email, message].forEach(input => {
+                    input.classList.remove("valid");
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -471,3 +471,159 @@ body {
         flex: 1;
     }
 }
+
+/* Section background */
+.feedback-section {
+    position: relative;
+    background: url('https://i.pinimg.com/736x/4d/b7/d3/4db7d318d6437d172b6c98766ea4fb38.jpg') center center/cover no-repeat;
+    height: 100vh; /* full screen */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.feedback-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(4px);
+    z-index: 1;
+}
+
+/* Ensure content is above overlay */
+.feedback-section .container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+/* Header text */
+.feedback-header {
+    flex: 0 0 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Form wrapper */
+.feedback-form-wrapper {
+    flex: 0 0 50%; /* form occupies 60vh of section */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Feedback form box */
+.feedback-form {
+    background-color: #f88379;
+    height: 475px;  /* exactly 60vh */
+    max-width: 600px;
+    width: 375px;
+    border-radius: 8px;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Labels inline with inputs */
+.feedback-form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group{
+    width: 300px;
+}
+
+/* Labels */
+.feedback-form .form-label {
+    color: #fff;
+    font-weight: 500;
+    min-width: 120px; /* fixed label width */
+    margin-right: 10px;
+    text-align: left;
+}
+
+/* Inputs + Textareas */
+.feedback-form .form-control {
+    background-color: #f88379;
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+}
+
+/* Placeholder styling */
+.feedback-form .form-control::placeholder {
+    color: rgba(255,255,255,0.8);
+}
+
+/* Focus effect */
+.feedback-form .form-control:focus {
+    border-color: #fff;
+    box-shadow: 0 0 8px rgba(255,255,255,0.5);
+}
+
+/* Submit button */
+.feedback-form button {
+    margin-top: 15px;
+}
+
+/* Feedback form box */
+.feedback-form {
+    background-color: #f88379;
+    height: 95%;  /* ~60vh inside 100vh section */
+    max-width: 600px;
+    width: 75%;  /* adjust width */
+    border-radius: 8px;
+    padding: 20px;
+    overflow-y: auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Labels inline with inputs */
+.feedback-form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Labels */
+.feedback-form .form-label {
+    color: #fff !important;   /* force white */
+    font-weight: 500;
+    min-width: 120px;
+    margin-right: 10px;
+    text-align: left;
+}
+
+/* Inputs + Textareas */
+.feedback-form .form-control {
+    background-color: #f88379 !important; /* force pink */
+    border: 2px solid #fff !important;    /* force white border */
+    color: #fff !important;               /* white text */
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    outline: none;
+    box-shadow: none !important;          /* remove bootstrap glow */
+}
+
+/* Placeholder styling */
+.feedback-form .form-control::placeholder {
+    color: rgba(255,255,255,0.8);
+}
+
+/* Focus effect */
+.feedback-form .form-control:focus {
+    border-color: #fff !important;
+    box-shadow: 0 0 8px rgba(255,255,255,0.5) !important;
+}

@@ -1,18 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Spice of South</title>
     <!-- Bootstrap 5 CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Font Awesome 6 (Icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <!-- Google Font (Playfair Display) -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Optional: jQuery (only if you need it for other custom scripts) -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -20,637 +31,986 @@
     <!-- Bootstrap 5 JS (bundle includes Popper.js) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="menu.css">
-</head>
+    <link rel="stylesheet" href="menu.css" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg bg-white custom-navbar">
-        <div class="container d-flex align-items-center">
+      <div class="container d-flex align-items-center">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="nav.png"
+            alt="The Spice of South Logo"
+            class="logo-img"
+            style="height: 18vh; width: 18vw; padding: 2px"
+          />
+        </a>
 
-            <!-- Logo -->
-            <a class="navbar-brand" href="#">
-                <img src="nav.png" alt="The Spice of South Logo" class="logo-img"
-                    style="height: 20vh; width: 20vw; padding: 2px;" />
-            </a>
+        <!-- Mobile Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <!-- Mobile Toggler -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Navigation Links -->
-            <div class="collapse navbar-collapse justify-content-end" id="navContent">
-                <ul class="navbar-nav align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-highlight" href="#">Menu</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="testimonials.html">Testimonials</a>
-                    </li>
-                    <li class="nav-item mr-10">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item ml-7">
-                        <a href="#" class="btn btn-reserve">Make a Reservation</a>
-                    </li>
-                </ul>
-            </div>
+        <!-- Navigation Links -->
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navContent"
+        >
+          <ul class="navbar-nav align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="index.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-highlight" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="testimonials.php">Testimonials</a>
+            </li>
+            <li class="nav-item mr-10">
+              <a class="nav-link" href="contact.php">Contact</a>
+            </li>
+            <li class="nav-item ml-7">
+              <a href="#" class="btn btn-reserve">Make a Reservation</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <section class="about-section">
-        <div class="about-overlay">
-            <div class="row">
-
-                <div class="col-12" style="color: white;">
-                    <center>
-                        <h1 style="margin-bottom: 15px; font-weight: bold;">Our Menu</h1>
-                    </center>
-                    <p style="font-size: medium; font-weight: 400;">
-                        Here are some of our delicious and most loved items by our customers all over the world.
-                    </p>
-                </div>
-
-            </div>
+      <div class="about-overlay">
+        <div class="row">
+          <div class="col-12" style="color: white">
+            <center>
+              <h1
+                style="margin-bottom: 15px; font-weight: bold; font-size: 35px"
+              >
+                Our Menu
+              </h1>
+            </center>
+            <p style="font-size: medium; font-weight: 400; font-size: 18px">
+              Here are some of our delicious and most loved items by our
+              customers all over the world.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="menu-section">
-        <div class="container">
-            <h2 class="menu-heading text-center">South Indian</h2>
-            <div class="bg mx-auto" style="background-color:#cc5500; height:2px; width:120px;"></div>
-            <p class="menu-subheading text-center">Rasam (Accompaniment)</p>
+      <div class="container">
+        <h2 class="menu-heading text-center">South Indian</h2>
+        <div
+          class="bg mx-auto"
+          style="background-color: #cc5500; height: 2px; width: 120px"
+        ></div>
+        <p class="menu-subheading text-center">Rasam (Accompaniment)</p>
 
-            <div class="row">
-                <!-- Left Column -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
-                    <ul class="menu-list">
-                        <li class="menu-item"><img src="menu/butter_onion_dosa.jpg"><span class="item-name">Butter
-                                Plain Dosa</span><span class="dots"></span><span class="price">₹195</span></li>
-                        <li class="menu-item"><img src="menu/masala_dosa.jpg"><span class="item-name">Masala
-                                Dosa</span><span class="dots"></span><span class="price">₹215</span></li>
-                        <li class="menu-item"><img src="menu/paneer_dosa.jpg"><span class="item-name">Paneer
-                                Dosa</span><span class="dots"></span><span class="price">₹245</span></li>
-                        <li class="menu-item"><img src="menu/mysore_dosa.jpeg"><span class="item-name">Mysore
-                                Masala Dosa</span><span class="dots"></span><span class="price">₹245</span></li>
-                        <li class="menu-item"><img src="menu/cheese-dosa.jpg"><span class="item-name">Cheese
-                                Masala Dosa</span><span class="dots"></span><span class="price">₹255</span></li>
-                        <li class="menu-item"><img src="menu/butter_onion_dosa.jpg"><span class="item-name">Butter Onion
-                                Masala Dosa</span><span class="dots"></span><span class="price">₹255</span></li>
-                        <li class="menu-item"><img src="menu/pizza-dosa.jpg"><span class="item-name">Pizza
-                                Dosa</span><span class="dots"></span><span class="price">₹295</span></li>
-                        <li class="menu-item"><img src="menu/mix-vegmasala-dosa.jpg"><span class="item-name">Mix Veg
-                                Masala Dosa</span><span class="dots"></span><span class="price">₹245</span></li>
-                        <li class="menu-item"><img src="menu/garlic-cheese-dosa.jpg"><span class="item-name">Garlic
-                                Masala Dosa</span><span class="dots"></span><span class="price">₹255</span></li>
-                        <li class="menu-item"><img src="menu/spring-roll-dosa.jpeg"><span class="item-name">Spring Roll
-                                Dosa</span><span class="dots"></span><span class="price">₹245</span></li>
-                        <li class="menu-item"><img src="menu/ghee-dosa.jpg"><span class="item-name">Ghee
-                                Roast Plain Dosa</span><span class="dots"></span><span class="price">₹275</span></li>
-                        <li class="menu-item"><img src="menu/ghee-masala-dosa.jpeg"><span class="item-name">Ghee
-                                Roast Masala Dosa</span><span class="dots"></span><span class="price">₹285</span></li>
-                        <li class="menu-item"><img src="menu/burjkhalifa-dosa.jpg"><span class="item-name">Burj
-                                Khalifa Dosa</span><span class="dots"></span><span class="price">₹285</span></li>
-                        <li class="menu-item"><img src="menu/masala dosa wrap.JPG"><span class="item-name">Masala Dosa
-                                Wrap</span><span class="dots"></span><span class="price">₹285</span></li>
-                        <li class="menu-item"><img src="menu/the-spice-of-dosa.jpg"><span class="item-name">The
-                                Spice of South Special Dosa</span><span class="dots"></span><span
-                                class="price">₹315</span></li>
-                        <li class="menu-item"><img src="menu/rava-dosa.jpeg"><span class="item-name">Rava Plain
-                                Dosa</span><span class="dots"></span><span class="price">₹275</span></li>
-                        <li class="menu-item"><img src="menu/rava-masala.jpeg"><span class="item-name">Rava Masala
-                                Dosa</span><span class="dots"></span><span class="price">₹275</span></li>
-                        <li class="menu-item"><img src="images/rava-onion-dosa.jpg"><span class="item-name">Rava Onion
-                                Dosa</span><span class="dots"></span><span class="price">₹285</span></li>
-                        <li class="menu-item"><img src="menu/rava-masala.jpeg"><span class="item-name">Rava
-                                Butter Masala Dosa</span><span class="dots"></span><span class="price">₹295</span></li>
-                        <li class="menu-item"><img src="menu/rava-6.jpg"><span class="item-name">Rava
-                                Onion Paneer Dosa</span><span class="dots"></span><span class="price">₹295</span></li>
-                        <li class="menu-item"><img src="menu/rava-4.jpg"><span class="item-name">Rava Onion Butter
-                                Masala Dosa</span><span class="dots"></span><span class="price">₹295</span></li>
-                        <li class="menu-item"><img src="menu/rava-5.jpg"><span class="item-name">Rava Ghee Roasted
-                                Masala Dosa</span><span class="dots"></span><span class="price">₹295</span></li>
-                    </ul>
-                </div>
-                <!-- Right Column -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-5">
-                    <ul class="menu-list">
-                        <li class="menu-item"><img src="menu/vrat-ka-medu-vada-2-2.jpg"><span class="item-name">Medu
-                                Vada</span><span class="dots"></span><span class="price">₹165</span></li>
-                        <li class="menu-item"><img src="menu/Dahi-Vada-5.jpg"><span class="item-name">Dahi
-                                Vada</span><span class="dots"></span><span class="price">₹175</span></li>
-                        <li class="menu-item"><img src="menu/idli-vada.jpg"><span class="item-name">Idli Vada
-                                Combo</span><span class="dots"></span><span class="price">₹215</span></li>
-                        <li class="menu-item"><img src="menu/veg idli.png"><span class="item-name">Idli (2
-                                Pcs)</span><span class="dots"></span><span class="price">₹165</span></li>
-                        <li class="menu-item"><img src="menu/Masala-Idli.jpg"><span class="item-name">Masala Idli (2
-                                Pcs)</span><span class="dots"></span><span class="price">₹175</span></li>
-                        <li class="menu-item"><img src="menu/veg idli.png"><span class="item-name">Vegetable
-                                Idli (2 Pcs)</span><span class="dots"></span><span class="price">₹185</span></li>
-                        <li class="menu-item"><img src="menu/Rasam-Idli.jpg"><span class="item-name">Rasam Idli (2
-                                Pcs)</span><span class="dots"></span><span class="price">₹175</span></li>
-                        <li class="menu-item"><img src="menu/butter-idli.jpeg"><span class="item-name">Butter Idli (2
-                                Pcs)</span><span class="dots"></span><span class="price">₹185</span></li>
-                        <li class="menu-item"><img src="menu/ghee-idli.jpg"><span class="item-name">Ghee Idli (2
-                                Pcs)</span><span class="dots"></span><span class="price">₹195</span></li>
-                        <li class="menu-item"><img src="menu/onion-utpm.jpg"><span class="item-name">Onion
-                                Uttapam</span><span class="dots"></span><span class="price">₹265</span></li>
-                        <li class="menu-item"><img src="menu/Tomato_Uttapam.jpg"><span class="item-name">Tomato
-                                Uttapam</span><span class="dots"></span><span class="price">₹255</span></li>
-                        <li class="menu-item"><img src="menu/onion-tomato-utpm.jpg"><span class="item-name">Onion
-                                Tomato Uttapam</span><span class="dots"></span><span class="price">₹265</span></li>
-                        <li class="menu-item"><img src="menu/signature-utpm.jpeg"><span class="item-name">Signature
-                                Uttapam</span><span class="dots"></span><span class="price">₹275</span></li>
-                        <li class="menu-item"><img src="menu/signature-utpm.jpeg"><span class="item-name">Masala
-                                Uttapam</span><span class="dots"></span><span class="price">₹275</span></li>
-                        <li class="menu-item"><img src="menu/coconut-utpm.jpg"><span class="item-name">Coconut
-                                Uttapam</span><span class="dots"></span><span class="price">₹275</span></li>
-                        <li class="menu-item"><img src="menu/cheese-utpm.jpg"><span class="item-name">Cheese
-                                Uttapam</span><span class="dots"></span><span class="price">₹285</span></li>
-                        <li class="menu-item"><img src="menu/paneer-utpm.jpeg"><span class="item-name">Paneer
-                                Uttapam</span><span class="dots"></span><span class="price">₹285</span></li>
-                        <li class="menu-item"><img src="menu/mix-veg-utpm.jpg"><span class="item-name">Mix Veg
-                                Uttapam</span><span class="dots"></span><span class="price">₹285</span></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="row">
+          <!-- Left Column -->
+          <div
+            class="col-xl-6 col-lg-6 col-md-6 col-sm-6"
+            style="font-size: medium"
+          >
+            <ul class="menu-list">
+              <li class="menu-item">
+                <img src="menu/butter_onion_dosa.jpg" /><span class="item-name"
+                  >Butter Plain Dosa</span
+                ><span class="dots"></span><span class="price">₹195</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/masala_dosa.jpg" /><span class="item-name"
+                  >Masala Dosa</span
+                ><span class="dots"></span><span class="price">₹215</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/paneer_dosa.jpg" /><span class="item-name"
+                  >Paneer Dosa</span
+                ><span class="dots"></span><span class="price">₹245</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/mysore_dosa.jpeg" /><span class="item-name"
+                  >Mysore Masala Dosa</span
+                ><span class="dots"></span><span class="price">₹245</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/cheese-dosa.jpg" /><span class="item-name"
+                  >Cheese Masala Dosa</span
+                ><span class="dots"></span><span class="price">₹255</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/butter_onion_dosa.jpg" /><span class="item-name"
+                  >Butter Onion Masala Dosa</span
+                ><span class="dots"></span><span class="price">₹255</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/pizza-dosa.jpg" /><span class="item-name"
+                  >Pizza Dosa</span
+                ><span class="dots"></span><span class="price">₹295</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/mix-vegmasala-dosa.jpg" /><span class="item-name"
+                  >Mix Veg Masala Dosa</span
+                ><span class="dots"></span><span class="price">₹245</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/garlic-cheese-dosa.jpg" /><span class="item-name"
+                  >Garlic Masala Dosa</span
+                ><span class="dots"></span><span class="price">₹255</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/spring-roll-dosa.jpeg" /><span class="item-name"
+                  >Spring Roll Dosa</span
+                ><span class="dots"></span><span class="price">₹245</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/ghee-dosa.jpg" /><span class="item-name"
+                  >Ghee Roast Plain Dosa</span
+                ><span class="dots"></span><span class="price">₹275</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/ghee-masala-dosa.jpeg" /><span class="item-name"
+                  >Ghee Roast Masala Dosa</span
+                ><span class="dots"></span><span class="price">₹285</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/burjkhalifa-dosa.jpg" /><span class="item-name"
+                  >Burj Khalifa Dosa</span
+                ><span class="dots"></span><span class="price">₹285</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/masala dosa wrap.JPG" /><span class="item-name"
+                  >Masala Dosa Wrap</span
+                ><span class="dots"></span><span class="price">₹285</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/the-spice-of-dosa.jpg" /><span class="item-name"
+                  >The Spice of South Special Dosa</span
+                ><span class="dots"></span><span class="price">₹315</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/rava-dosa.jpeg" /><span class="item-name"
+                  >Rava Plain Dosa</span
+                ><span class="dots"></span><span class="price">₹275</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/rava-masala.jpeg" /><span class="item-name"
+                  >Rava Masala Dosa</span
+                ><span class="dots"></span><span class="price">₹275</span>
+              </li>
+              <li class="menu-item">
+                <img src="images/rava-onion-dosa.jpg" /><span class="item-name"
+                  >Rava Onion Dosa</span
+                ><span class="dots"></span><span class="price">₹285</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/rava-masala.jpeg" /><span class="item-name"
+                  >Rava Butter Masala Dosa</span
+                ><span class="dots"></span><span class="price">₹295</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/rava-6.jpg" /><span class="item-name"
+                  >Rava Onion Paneer Dosa</span
+                ><span class="dots"></span><span class="price">₹295</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/rava-4.jpg" /><span class="item-name"
+                  >Rava Onion Butter Masala Dosa</span
+                ><span class="dots"></span><span class="price">₹295</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/rava-5.jpg" /><span class="item-name"
+                  >Rava Ghee Roasted Masala Dosa</span
+                ><span class="dots"></span><span class="price">₹295</span>
+              </li>
+            </ul>
+          </div>
+          <!-- Right Column -->
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-5">
+            <ul class="menu-list" style="margin-top: 45px">
+              <li class="menu-item">
+                <img src="menu/vrat-ka-medu-vada-2-2.jpg" /><span
+                  class="item-name"
+                  >Medu Vada</span
+                ><span class="dots"></span><span class="price">₹165</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/Dahi-Vada-5.jpg" /><span class="item-name"
+                  >Dahi Vada</span
+                ><span class="dots"></span><span class="price">₹175</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/idli-vada.jpg" /><span class="item-name"
+                  >Idli Vada Combo</span
+                ><span class="dots"></span><span class="price">₹215</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/veg idli.png" /><span class="item-name"
+                  >Idli (2 Pcs)</span
+                ><span class="dots"></span><span class="price">₹165</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/Masala-Idli.jpg" /><span class="item-name"
+                  >Masala Idli (2 Pcs)</span
+                ><span class="dots"></span><span class="price">₹175</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/veg idli.png" /><span class="item-name"
+                  >Vegetable Idli (2 Pcs)</span
+                ><span class="dots"></span><span class="price">₹185</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/Rasam-Idli.jpg" /><span class="item-name"
+                  >Rasam Idli (2 Pcs)</span
+                ><span class="dots"></span><span class="price">₹175</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/butter-idli.jpeg" /><span class="item-name"
+                  >Butter Idli (2 Pcs)</span
+                ><span class="dots"></span><span class="price">₹185</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/ghee-idli.jpg" /><span class="item-name"
+                  >Ghee Idli (2 Pcs)</span
+                ><span class="dots"></span><span class="price">₹195</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/onion-utpm.jpg" /><span class="item-name"
+                  >Onion Uttapam</span
+                ><span class="dots"></span><span class="price">₹265</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/Tomato_Uttapam.jpg" /><span class="item-name"
+                  >Tomato Uttapam</span
+                ><span class="dots"></span><span class="price">₹255</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/onion-tomato-utpm.jpg" /><span class="item-name"
+                  >Onion Tomato Uttapam</span
+                ><span class="dots"></span><span class="price">₹265</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/signature-utpm.jpeg" /><span class="item-name"
+                  >Signature Uttapam</span
+                ><span class="dots"></span><span class="price">₹275</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/signature-utpm.jpeg" /><span class="item-name"
+                  >Masala Uttapam</span
+                ><span class="dots"></span><span class="price">₹275</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/coconut-utpm.jpg" /><span class="item-name"
+                  >Coconut Uttapam</span
+                ><span class="dots"></span><span class="price">₹275</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/cheese-utpm.jpg" /><span class="item-name"
+                  >Cheese Uttapam</span
+                ><span class="dots"></span><span class="price">₹285</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/paneer-utpm.jpeg" /><span class="item-name"
+                  >Paneer Uttapam</span
+                ><span class="dots"></span><span class="price">₹285</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/mix-veg-utpm.jpg" /><span class="item-name"
+                  >Mix Veg Uttapam</span
+                ><span class="dots"></span><span class="price">₹285</span>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="food-tabs-section py-5">
-        <div class="container h-100">
-            <div class="row h-100">
+      <div class="container h-100">
+        <div class="row h-100">
+          <!-- Left Side Tabs -->
+          <div class="col-md-3">
+            <ul class="nav nav-pills flex-column" id="foodTabs" role="tablist">
+              <li class="nav-item">
+                <button
+                  class="nav-link active"
+                  data-bs-toggle="pill"
+                  data-bs-target="#food-cheese"
+                >
+                  Cheese Croissants
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link"
+                  data-bs-toggle="pill"
+                  data-bs-target="#food-bruschetti"
+                >
+                  Bruschetti
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link"
+                  data-bs-toggle="pill"
+                  data-bs-target="#food-veg"
+                >
+                  Awesome Vegetables
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link"
+                  data-bs-toggle="pill"
+                  data-bs-target="#food-snacks"
+                >
+                  Tasty Snacks
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link"
+                  data-bs-toggle="pill"
+                  data-bs-target="#food-recipes"
+                >
+                  All-Time Best Recipes
+                </button>
+              </li>
+              <li class="nav-item">
+                <button
+                  class="nav-link"
+                  data-bs-toggle="pill"
+                  data-bs-target="#food-family"
+                >
+                  Meal For Whole Family
+                </button>
+              </li>
+            </ul>
+          </div>
 
-                <!-- Left Side Tabs -->
-                <div class="col-md-3">
-                    <ul class="nav nav-pills flex-column" id="foodTabs" role="tablist">
-                        <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill"
-                                data-bs-target="#food-cheese">Cheese Croissants</button></li>
-                        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill"
-                                data-bs-target="#food-bruschetti">Bruschetti</button></li>
-                        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill"
-                                data-bs-target="#food-veg">Awesome Vegetables</button></li>
-                        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill"
-                                data-bs-target="#food-snacks">Tasty Snacks</button></li>
-                        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill"
-                                data-bs-target="#food-recipes">All-Time Best Recipes</button></li>
-                        <li class="nav-item"><button class="nav-link" data-bs-toggle="pill"
-                                data-bs-target="#food-family">Meal For Whole Family</button></li>
-                    </ul>
+          <!-- Right Side Content -->
+          <div class="col-md-9">
+            <div class="tab-content">
+              <div class="tab-pane fade show active" id="food-cheese">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <h3>Cheese Croissants</h3>
+                    <p>
+                      Flaky, buttery croissants layered with a rich and creamy
+                      cheese filling. Perfectly golden on the outside, soft and
+                      warm on the inside, they make for a delightful breakfast
+                      or mid-day snack. The combination of melt-in-your-mouth
+                      pastry and savory cheese is simply irresistible. Enjoy
+                      them fresh from the oven for the best flavor experience.
+                      Pair with coffee or tea for a comforting treat.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="https://i.pinimg.com/1200x/3f/99/3d/3f993db09fffe35285d79bc87a2ef917.jpg"
+                      class="img-fluid rounded"
+                    />
+                  </div>
                 </div>
+              </div>
 
-                <!-- Right Side Content -->
-                <div class="col-md-9">
-                    <div class="tab-content">
-
-                        <div class="tab-pane fade show active" id="food-cheese">
-                            <div class="row align-items-center">
-                                <div class="col-md-8">
-                                    <h3>Cheese Croissants</h3>
-                                    <p>Flaky, buttery croissants layered with a rich and creamy cheese filling.
-                                        Perfectly golden on the outside, soft and warm on the inside, they make
-                                        for a delightful breakfast or mid-day snack. The combination of
-                                        melt-in-your-mouth pastry and savory cheese is simply irresistible.
-                                        Enjoy them fresh from the oven for the best flavor experience.
-                                        Pair with coffee or tea for a comforting treat.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="https://i.pinimg.com/1200x/3f/99/3d/3f993db09fffe35285d79bc87a2ef917.jpg"
-                                        class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="food-bruschetti">
-                            <div class="row align-items-center">
-                                <div class="col-md-8">
-                                    <h3>Bruschetti</h3>
-                                    <p>A classic Italian appetizer featuring toasted bread topped with
-                                        fresh diced tomatoes, fragrant basil, and a drizzle of olive oil.
-                                        The crunchy bread complements the juicy, tangy topping perfectly.
-                                        Often served as a starter, bruschetti bring vibrant colors and
-                                        bold Mediterranean flavors to the table. Simple, fresh, and
-                                        always a crowd-pleaser at any gathering.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="https://i.pinimg.com/1200x/07/10/55/071055249e27852a2e9341ed25fe239d.jpg"
-                                        class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="food-veg">
-                            <div class="row align-items-center">
-                                <div class="col-md-8">
-                                    <h3>Awesome Vegetables</h3>
-                                    <p> A colorful medley of seasonal vegetables cooked to perfection.
-                                        Each bite is bursting with freshness, natural sweetness, and nutrients.
-                                        From crunchy bell peppers to tender zucchini, the mix delivers a
-                                        variety of textures and flavors. Lightly seasoned to let the
-                                        vegetables shine, this dish is as healthy as it is delicious.
-                                        Ideal for anyone who loves fresh, wholesome meals.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="https://i.pinimg.com/1200x/74/03/f3/7403f30ea605c502b7c27a822fb0c74b.jpg"
-                                        class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="food-snacks">
-                            <div class="row align-items-center">
-                                <div class="col-md-8">
-                                    <h3>Tasty Snacks</h3>
-                                    <p>Quick bites that are both satisfying and easy to prepare.
-                                        From savory crackers to mini sandwiches, these snacks are
-                                        perfect for any time of day. They strike the right balance
-                                        between flavor and convenience, making them great for parties
-                                        or lazy afternoons. With a variety of options, there’s
-                                        something for every craving in this tasty selection.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="https://i.pinimg.com/736x/d1/42/af/d142aff39a5ed30cd29cfe0e5f621a2c.jpg"
-                                        class="img-fluid rounded" style="height: 50vh;">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="food-recipes">
-                            <div class="row align-items-center">
-                                <div class="col-md-8">
-                                    <h3>All-Time Best Recipes</h3>
-                                    <p>Our handpicked collection of recipes that have stood the test of time.
-                                        These dishes are favorites for their unbeatable taste and reliability.
-                                        Whether it’s a hearty main course or a decadent dessert, each recipe
-                                        is easy to follow and delivers exceptional results. Perfect for both
-                                        special occasions and everyday meals, they are sure to impress.
-                                        Cooking them once will make them a permanent part of your menu.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="https://i.pinimg.com/1200x/09/aa/f1/09aaf1361d8526fa91de233d2d218a92.jpg"
-                                        class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="tab-pane fade" id="food-family">
-                            <div class="row align-items-center">
-                                <div class="col-md-8">
-                                    <h3>Meal For Whole Family</h3>
-                                    <p>Wholesome, hearty dishes designed to bring everyone together at the table.
-                                        These meals are nutritious, flavorful, and generous in portions.
-                                        They include a balance of proteins, vegetables, and carbs to satisfy
-                                        all age groups. Perfect for family dinners, celebrations, or weekend
-                                        feasts, they turn mealtimes into memorable moments.
-                                        Love and comfort in every bite.</p>
-                                </div>
-                                <div class="col-md-4">
-                                    <img src="https://i.pinimg.com/736x/53/43/97/534397daa7e7644ce809651013a40b23.jpg"
-                                        class="img-fluid rounded">
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
+              <div class="tab-pane fade" id="food-bruschetti">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <h3>Bruschetti</h3>
+                    <p>
+                      A classic Italian appetizer featuring toasted bread topped
+                      with fresh diced tomatoes, fragrant basil, and a drizzle
+                      of olive oil. The crunchy bread complements the juicy,
+                      tangy topping perfectly. Often served as a starter,
+                      bruschetti bring vibrant colors and bold Mediterranean
+                      flavors to the table. Simple, fresh, and always a
+                      crowd-pleaser at any gathering.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="https://i.pinimg.com/1200x/07/10/55/071055249e27852a2e9341ed25fe239d.jpg"
+                      class="img-fluid rounded"
+                    />
+                  </div>
                 </div>
+              </div>
 
+              <div class="tab-pane fade" id="food-veg">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <h3>Awesome Vegetables</h3>
+                    <p>
+                      A colorful medley of seasonal vegetables cooked to
+                      perfection. Each bite is bursting with freshness, natural
+                      sweetness, and nutrients. From crunchy bell peppers to
+                      tender zucchini, the mix delivers a variety of textures
+                      and flavors. Lightly seasoned to let the vegetables shine,
+                      this dish is as healthy as it is delicious. Ideal for
+                      anyone who loves fresh, wholesome meals.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="https://i.pinimg.com/1200x/74/03/f3/7403f30ea605c502b7c27a822fb0c74b.jpg"
+                      class="img-fluid rounded"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="food-snacks">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <h3>Tasty Snacks</h3>
+                    <p>
+                      Quick bites that are both satisfying and easy to prepare.
+                      From savory crackers to mini sandwiches, these snacks are
+                      perfect for any time of day. They strike the right balance
+                      between flavor and convenience, making them great for
+                      parties or lazy afternoons. With a variety of options,
+                      there’s something for every craving in this tasty
+                      selection.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="https://i.pinimg.com/736x/d1/42/af/d142aff39a5ed30cd29cfe0e5f621a2c.jpg"
+                      class="img-fluid rounded"
+                      style="height: 50vh"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="food-recipes">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <h3>All-Time Best Recipes</h3>
+                    <p>
+                      Our handpicked collection of recipes that have stood the
+                      test of time. These dishes are favorites for their
+                      unbeatable taste and reliability. Whether it’s a hearty
+                      main course or a decadent dessert, each recipe is easy to
+                      follow and delivers exceptional results. Perfect for both
+                      special occasions and everyday meals, they are sure to
+                      impress. Cooking them once will make them a permanent part
+                      of your menu.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="https://i.pinimg.com/1200x/09/aa/f1/09aaf1361d8526fa91de233d2d218a92.jpg"
+                      class="img-fluid rounded"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="tab-pane fade" id="food-family">
+                <div class="row align-items-center">
+                  <div class="col-md-8">
+                    <h3>Meal For Whole Family</h3>
+                    <p>
+                      Wholesome, hearty dishes designed to bring everyone
+                      together at the table. These meals are nutritious,
+                      flavorful, and generous in portions. They include a
+                      balance of proteins, vegetables, and carbs to satisfy all
+                      age groups. Perfect for family dinners, celebrations, or
+                      weekend feasts, they turn mealtimes into memorable
+                      moments. Love and comfort in every bite.
+                    </p>
+                  </div>
+                  <div class="col-md-4">
+                    <img
+                      src="https://i.pinimg.com/736x/53/43/97/534397daa7e7644ce809651013a40b23.jpg"
+                      class="img-fluid rounded"
+                    />
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="menu-section">
-        <div class="container">
-            <h2 class="menu-heading text-center">Chinese</h2>
-            <div class="mx-auto" style="background-color:#cc5500; height:2px; width:100px;"></div>
-            <p class="menu-subheading text-center"></p>
+      <div class="container">
+        <h2 class="menu-heading text-center">Chinese</h2>
+        <div
+          class="mx-auto"
+          style="background-color: #cc5500; height: 2px; width: 100px"
+        ></div>
+        <p class="menu-subheading text-center"></p>
 
-            <div class="row">
-                <!-- Left Column -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
-                    <ul class="menu-list">
-                        <li class="menu-item"><img src="menu/manchow-soup.jpg"><span class="item-name">Manchow
-                                Soup</span><span class="dots"></span><span class="price">₹225</span></li>
-                        <li class="menu-item"><img src="menu/lemon-coriander-soup.jpg"><span class="item-name">Lemon
-                                Coriander Soup</span><span class="dots"></span><span class="price">₹245</span></li>
-                        <li class="menu-item"><img src="menu/hot-and-sour-soup.jpg"><span class="item-name">Hot & Sour
-                                Soup</span><span class="dots"></span><span class="price">₹245</span></li>
-                        <li class="menu-item"><img src="menu/manchow-soup-veg-6.jpg"><span class="item-name">Sweet Corn
-                                Soup</span><span class="dots"></span><span class="price">₹245</span></li>
-                        <li class="menu-item"><img src="menu/classic-spring-roll.jpg"><span class="item-name">Classic
-                                Spring Roll</span><span class="dots"></span><span class="price">₹165</span></li>
-                        <li class="menu-item"><img src="menu/pepper-corn-roll.jpg"><span class="item-name">Pepper Corn
-                                Cheese Roll</span><span class="dots"></span><span class="price">₹325</span></li>
-                        <li class="menu-item"><img src="menu/honey chilli-Lotus-Stem.jpg"><span class="item-name">Honey
-                                Chilli Lotus Stem</span><span class="dots"></span><span class="price">₹325</span></li>
-                        <li class="menu-item"><img src="menu/corn-salt-and-pepper.jpg"><span class="item-name">Corn Salt
-                                & Pepper</span><span class="dots"></span><span class="price">₹325</span></li>
-                        <li class="menu-item"><img src="menu/"><span class="item-name">Honey Chilli Potato</span><span
-                                class="dots"></span><span class="price">₹325</span></li>
-                        <li class="menu-item"><img src="menu/hot-garlic-souce.jpeg"><span class="item-name">Crispy Veg,
-                                Hot Garlic
-                                Sauce</span><span class="dots"></span><span class="price">₹345</span></li>
-                        <li class="menu-item"><img src="menu/claasic-cheese-chilli.jpg"><span class="item-name">Classic
-                                Cheese Chilli</span><span class="dots"></span><span class="price">₹365</span></li>
-                        <li class="menu-item"><img src="menu/classic-cheese-chilly-roll.jpg"><span
-                                class="item-name">Classic Cheese Corn Roll</span><span class="dots"></span><span
-                                class="price">₹365</span></li>
-                        <li class="menu-item"><img src="menu/paneer-65.jpeg"><span class="item-name">Paneer
-                                65</span><span class="dots"></span><span class="price">₹365</span></li>
-                        <li class="menu-item"><img src="menu/mushroom chilli.jpg"><span class="item-name">Mushroom
-                                Chilli</span><span class="dots"></span><span class="price">₹425</span></li>
-                        <li class="menu-item"><img src="menu/naga-chilli-mushroom-recipe.jpg"><span
-                                class="item-name">Naga Chilli Mushroom
-                                Chilli</span><span class="dots"></span><span class="price">₹425</span></li>
-                        <li class="menu-item"><img src="menu/cottage-cheese.jpeg"><span class="item-name">Shanghai
-                                Cottage Cheese</span><span class="dots"></span><span class="price">₹425</span></li>
-                        <li class="menu-item"><img src="menu/Veg-Grilled-Sandwich.jpg"><span class="item-name">Veg.
-                                Grilled Sandwich</span><span class="dots"></span><span class="price">₹175</span></li>
-                        <li class="menu-item"><img src="menu/Bombay-Sandwich.jpg"><span class="item-name">Bombay
-                                Sandwich</span><span class="dots"></span><span class="price">₹245</span></li>
-                        <li class="menu-item"><img src="menu/club-sandwich.jpeg"><span class="item-name">Club
-                                Sandwich</span><span class="dots"></span><span class="price">₹295</span></li>
-                    </ul>
-                </div>
+        <div class="row">
+          <!-- Left Column -->
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <img src="menu/manchow-soup.jpg" /><span class="item-name"
+                  >Manchow Soup</span
+                ><span class="dots"></span><span class="price">₹225</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/lemon-coriander-soup.jpg" /><span
+                  class="item-name"
+                  >Lemon Coriander Soup</span
+                ><span class="dots"></span><span class="price">₹245</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/hot-and-sour-soup.jpg" /><span class="item-name"
+                  >Hot & Sour Soup</span
+                ><span class="dots"></span><span class="price">₹245</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/manchow-soup-veg-6.jpg" /><span class="item-name"
+                  >Sweet Corn Soup</span
+                ><span class="dots"></span><span class="price">₹245</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/classic-spring-roll.jpg" /><span
+                  class="item-name"
+                  >Classic Spring Roll</span
+                ><span class="dots"></span><span class="price">₹165</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/pepper-corn-roll.jpg" /><span class="item-name"
+                  >Pepper Corn Cheese Roll</span
+                ><span class="dots"></span><span class="price">₹325</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/honey chilli-Lotus-Stem.jpg" /><span
+                  class="item-name"
+                  >Honey Chilli Lotus Stem</span
+                ><span class="dots"></span><span class="price">₹325</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/corn-salt-and-pepper.jpg" /><span
+                  class="item-name"
+                  >Corn Salt & Pepper</span
+                ><span class="dots"></span><span class="price">₹325</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/" /><span class="item-name"
+                  >Honey Chilli Potato</span
+                ><span class="dots"></span><span class="price">₹325</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/hot-garlic-souce.jpeg" /><span class="item-name"
+                  >Crispy Veg, Hot Garlic Sauce</span
+                ><span class="dots"></span><span class="price">₹345</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/claasic-cheese-chilli.jpg" /><span
+                  class="item-name"
+                  >Classic Cheese Chilli</span
+                ><span class="dots"></span><span class="price">₹365</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/classic-cheese-chilly-roll.jpg" /><span
+                  class="item-name"
+                  >Classic Cheese Corn Roll</span
+                ><span class="dots"></span><span class="price">₹365</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/paneer-65.jpeg" /><span class="item-name"
+                  >Paneer 65</span
+                ><span class="dots"></span><span class="price">₹365</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/mushroom chilli.jpg" /><span class="item-name"
+                  >Mushroom Chilli</span
+                ><span class="dots"></span><span class="price">₹425</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/naga-chilli-mushroom-recipe.jpg" /><span
+                  class="item-name"
+                  >Naga Chilli Mushroom Chilli</span
+                ><span class="dots"></span><span class="price">₹425</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/cottage-cheese.jpeg" /><span class="item-name"
+                  >Shanghai Cottage Cheese</span
+                ><span class="dots"></span><span class="price">₹425</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/Veg-Grilled-Sandwich.jpg" /><span
+                  class="item-name"
+                  >Veg. Grilled Sandwich</span
+                ><span class="dots"></span><span class="price">₹175</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/Bombay-Sandwich.jpg" /><span class="item-name"
+                  >Bombay Sandwich</span
+                ><span class="dots"></span><span class="price">₹245</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/club-sandwich.jpeg" /><span class="item-name"
+                  >Club Sandwich</span
+                ><span class="dots"></span><span class="price">₹295</span>
+              </li>
+            </ul>
+          </div>
 
-                <!-- Right Column -->
-                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                    <ul class="menu-list">
-                        <li class="menu-item"><img src="menu/dim-sim.jpg"><span class="item-name">Cottage Cheese Dim
-                                Sums</span><span class="dots"></span><span class="price">₹255</span></li>
-                        <li class="menu-item"><img src="menu/herbal-dimsim.jpeg"><span class="item-name">Thai Herbal Dim
-                                Sums</span><span class="dots"></span><span class="price">₹285</span></li>
-                        <li class="menu-item"><img src="menu/French-Fries.jpg"><span class="item-name">French
-                                Fries</span><span class="dots"></span><span class="price">₹115</span></li>
-                        <li class="menu-item"><img src="menu/peri-peri-fries.jpeg"><span class="item-name">Peri Peri
-                                Fries</span><span class="dots"></span><span class="price">₹125</span></li>
+          <!-- Right Column -->
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <img src="menu/dim-sim.jpg" /><span class="item-name"
+                  >Cottage Cheese Dim Sums</span
+                ><span class="dots"></span><span class="price">₹255</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/herbal-dimsim.jpeg" /><span class="item-name"
+                  >Thai Herbal Dim Sums</span
+                ><span class="dots"></span><span class="price">₹285</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/French-Fries.jpg" /><span class="item-name"
+                  >French Fries</span
+                ><span class="dots"></span><span class="price">₹115</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/peri-peri-fries.jpeg" /><span class="item-name"
+                  >Peri Peri Fries</span
+                ><span class="dots"></span><span class="price">₹125</span>
+              </li>
 
-                        <li class="menu-item"><img src="menu/hakka-noodles.jpg"><span class="item-name">Hakka
-                                Noodles</span><span class="dots"></span><span class="price">₹275</span></li>
-                        <li class="menu-item"><img src="menu/veg-noodles.jpg"><span class="item-name">Veg
-                                Noodles</span><span class="dots"></span><span class="price">₹285</span></li>
-                        <li class="menu-item"><img src="menu/chili-garlic-noodles.jpg"><span class="item-name">Chilli
-                                Garlic Noodles</span><span class="dots"></span><span class="price">₹295</span></li>
-                        <li class="menu-item"><img src="menu/Pad-Thai-noodles.jpg"><span class="item-name">Pad Thai
-                                Noodles</span><span class="dots"></span><span class="price">₹315</span></li>
-                        <li class="menu-item"><img src="menu/veg-fried-noodles.jpeg"><span class="item-name">Veg Fried
-                                Noodles</span><span class="dots"></span><span class="price">₹285</span></li>
-                        <li class="menu-item"><img src="menu/burnt-garlic-veg-fried-rice.jpg"><span
-                                class="item-name">Burnt Chilli Garlic Fried
-                                Rice</span><span class="dots"></span><span class="price">₹295</span></li>
-                        <li class="menu-item"><img src="menu/"><span class="item-name">Schezwan Fried Rice</span><span
-                                class="dots"></span><span class="price">₹295</span></li>
-                        <li class="menu-item"><img src="menu/manchurian-gravy.jpg"><span class="item-name">Manchurian
-                                Gravy</span><span class="dots"></span><span class="price">₹275</span></li>
-                        <li class="menu-item"><img src="menu/chees-Chilly-gravy.jpg"><span class="item-name">Cheese
-                                Chilly Gravy</span><span class="dots"></span><span class="price">₹395</span></li>
-                        <li class="menu-item"><img src="menu/hot-garlic-souce.jpeg"><span class="item-name">Hot Garlic
-                                Sauce</span><span class="dots"></span><span class="price">₹385</span></li>
-                        <li class="menu-item"><img src="menu/Schezwan-Sauce.jpeg"><span class="item-name">Schezwan
-                                Sauce</span><span class="dots"></span><span class="price">₹415</span></li>
-                        <li class="menu-item"><img src="menu/black-bean-souce.jpeg"><span class="item-name">Black Bean
-                                Sauce</span><span class="dots"></span><span class="price">₹435</span></li>
-                        <li class="menu-item"><img src="menu/Cottage Cheese Kra Pao With Steam rice.jpeg"><span
-                                class="item-name">Cottage Cheese Ka Pao With Steam
-                                Rice</span><span class="dots"></span><span class="price">₹465</span></li>
-                        <li class="menu-item"><img src="menu/Red Thai Curry With Steam Rice.jpg"><span
-                                class="item-name">Red Thai Curry With Steam
-                                Rice</span><span class="dots"></span><span class="price">₹485</span></li>
-                        <li class="menu-item"><img src="menu/Green Thai Curry Steam Rice.jpg"><span
-                                class="item-name">Green Thai Curry Steam
-                                Rice</span><span class="dots"></span><span class="price">₹485</span></li>
-                    </ul>
-                </div>
-            </div>
+              <li class="menu-item">
+                <img src="menu/hakka-noodles.jpg" /><span class="item-name"
+                  >Hakka Noodles</span
+                ><span class="dots"></span><span class="price">₹275</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/veg-noodles.jpg" /><span class="item-name"
+                  >Veg Noodles</span
+                ><span class="dots"></span><span class="price">₹285</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/chili-garlic-noodles.jpg" /><span
+                  class="item-name"
+                  >Chilli Garlic Noodles</span
+                ><span class="dots"></span><span class="price">₹295</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/Pad-Thai-noodles.jpg" /><span class="item-name"
+                  >Pad Thai Noodles</span
+                ><span class="dots"></span><span class="price">₹315</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/veg-fried-noodles.jpeg" /><span class="item-name"
+                  >Veg Fried Noodles</span
+                ><span class="dots"></span><span class="price">₹285</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/burnt-garlic-veg-fried-rice.jpg" /><span
+                  class="item-name"
+                  >Burnt Chilli Garlic Fried Rice</span
+                ><span class="dots"></span><span class="price">₹295</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/" /><span class="item-name"
+                  >Schezwan Fried Rice</span
+                ><span class="dots"></span><span class="price">₹295</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/manchurian-gravy.jpg" /><span class="item-name"
+                  >Manchurian Gravy</span
+                ><span class="dots"></span><span class="price">₹275</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/chees-Chilly-gravy.jpg" /><span class="item-name"
+                  >Cheese Chilly Gravy</span
+                ><span class="dots"></span><span class="price">₹395</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/hot-garlic-souce.jpeg" /><span class="item-name"
+                  >Hot Garlic Sauce</span
+                ><span class="dots"></span><span class="price">₹385</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/Schezwan-Sauce.jpeg" /><span class="item-name"
+                  >Schezwan Sauce</span
+                ><span class="dots"></span><span class="price">₹415</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/black-bean-souce.jpeg" /><span class="item-name"
+                  >Black Bean Sauce</span
+                ><span class="dots"></span><span class="price">₹435</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="menu/Cottage Cheese Kra Pao With Steam rice.jpeg"
+                /><span class="item-name"
+                  >Cottage Cheese Ka Pao With Steam Rice</span
+                ><span class="dots"></span><span class="price">₹465</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/Red Thai Curry With Steam Rice.jpg" /><span
+                  class="item-name"
+                  >Red Thai Curry With Steam Rice</span
+                ><span class="dots"></span><span class="price">₹485</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/Green Thai Curry Steam Rice.jpg" /><span
+                  class="item-name"
+                  >Green Thai Curry Steam Rice</span
+                ><span class="dots"></span><span class="price">₹485</span>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="menu-banner">
-        <div class="menu-banner-textbox">
-            <h1>Natural ingredients and tasty food</h1>
-            <p>
-                Our dishes are crafted from carefully selected ingredients, sourced fresh every day to ensure
-                exceptional taste and quality.
-                From the crispness of our greens to the tenderness of our meats, every element is prepared with
-                dedication and skill.
-                We believe that great food is more than just a meal — it’s an experience that brings people together.
-                Each bite tells a story of passion, tradition, and creativity, making your dining moments truly
-                unforgettable.
-                Whether you’re here for a quick bite or a leisurely meal, we promise flavors that will linger in your
-                memory.
-                Taste the difference that care and authenticity can make.
-            </p>
-            <a href="#contact" class="menu-contact-btn">Contact Us</a>
-        </div>
+      <div class="menu-banner-textbox">
+        <h1>Natural ingredients and tasty food</h1>
+        <p>
+          Our dishes are crafted from carefully selected ingredients, sourced
+          fresh every day to ensure exceptional taste and quality. From the
+          crispness of our greens to the tenderness of our meats, every element
+          is prepared with dedication and skill. We believe that great food is
+          more than just a meal — it’s an experience that brings people
+          together. Each bite tells a story of passion, tradition, and
+          creativity, making your dining moments truly unforgettable. Whether
+          you’re here for a quick bite or a leisurely meal, we promise flavors
+          that will linger in your memory. Taste the difference that care and
+          authenticity can make.
+        </p>
+        <a href="#contact" class="menu-contact-btn">Contact Us</a>
+      </div>
     </section>
 
-<section class="menu-section">
-    <div class="container">
+    <section class="menu-section">
+      <div class="container">
         <h2 class="menu-heading text-center">Mocktails/Shakes</h2>
-        <div class="mx-auto" style="background-color:#cc5500; height:2px; width:120px;"></div>
+        <div
+          class="mx-auto"
+          style="background-color: #cc5500; height: 2px; width: 120px"
+        ></div>
         <p class="menu-subheading text-center"></p>
 
         <div class="row">
-            <!-- Left Column -->
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 ">
-                <ul class="menu-list">
-                    <li class="menu-item"><img src="https://i.pinimg.com/1200x/95/5a/13/955a13881ab9c428eb525e2dfc8dbf39.jpg"><span class="item-name">Fresh Lime Soda</span><span class="dots"></span><span class="price">₹75</span></li>
-                    <li class="menu-item"><img src="menu/Virgin-mojito-1.jpg"><span class="item-name">Virgin Mojito</span><span class="dots"></span><span class="price">₹125</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/f5/fa/98/f5fa984e5092ab63a4aea3ea05cf0036.jpg"><span class="item-name">Canned juice</span><span class="dots"></span><span class="price">₹95</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/68/50/1f/68501f60a4a44befdba30be1c21722a4.jpg"><span class="item-name">Gauva Chilli Twist</span><span class="dots"></span><span class="price">₹145</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/63/fe/9e/63fe9e6066520678479ab953fb1c2767.jpg"><span class="item-name">Watermelon Mojito</span><span class="dots"></span><span class="price">₹125</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/81/d1/ba/81d1bae3a7fcc93b88c62ca2c12e0adc.jpg"><span class="item-name">Pina Colada</span><span class="dots"></span><span class="price">₹155</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/1200x/16/12/f2/1612f2040b20f6971dfc0730fbd3cc9b.jpg"><span class="item-name">Fruit Punch</span><span class="dots"></span><span class="price">₹165</span></li>
-                </ul>
-            </div>
+          <!-- Left Column -->
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/1200x/95/5a/13/955a13881ab9c428eb525e2dfc8dbf39.jpg"
+                /><span class="item-name">Fresh Lime Soda</span
+                ><span class="dots"></span><span class="price">₹75</span>
+              </li>
+              <li class="menu-item">
+                <img src="menu/Virgin-mojito-1.jpg" /><span class="item-name"
+                  >Virgin Mojito</span
+                ><span class="dots"></span><span class="price">₹125</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/f5/fa/98/f5fa984e5092ab63a4aea3ea05cf0036.jpg"
+                /><span class="item-name">Canned juice</span
+                ><span class="dots"></span><span class="price">₹95</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/68/50/1f/68501f60a4a44befdba30be1c21722a4.jpg"
+                /><span class="item-name">Gauva Chilli Twist</span
+                ><span class="dots"></span><span class="price">₹145</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/63/fe/9e/63fe9e6066520678479ab953fb1c2767.jpg"
+                /><span class="item-name">Watermelon Mojito</span
+                ><span class="dots"></span><span class="price">₹125</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/81/d1/ba/81d1bae3a7fcc93b88c62ca2c12e0adc.jpg"
+                /><span class="item-name">Pina Colada</span
+                ><span class="dots"></span><span class="price">₹155</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/1200x/16/12/f2/1612f2040b20f6971dfc0730fbd3cc9b.jpg"
+                /><span class="item-name">Fruit Punch</span
+                ><span class="dots"></span><span class="price">₹165</span>
+              </li>
+            </ul>
+          </div>
 
-            <!-- Right Column -->
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-5">
-                <ul class="menu-list">
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/c2/6f/a3/c26fa36d3c7b05a023d4c6e1bbe9d634.jpg"><span class="item-name">Strawberry Shake</span><span class="dots"></span><span class="price">₹155</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/31/bf/77/31bf777602109d6a3805740295cf1641.jpg"><span class="item-name">Blueberry Shake</span><span class="dots"></span><span class="price">₹175</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/b9/4a/43/b94a43544f93cb8cb71e6ad80b0d35ab.jpg"><span class="item-name">Black Currant Shake</span><span class="dots"></span><span class="price">₹185</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/c0/cc/d9/c0ccd9a62dc11e28420b16752fbc7088.jpg"><span class="item-name">Fudge Brownie Shake</span><span class="dots"></span><span class="price">₹185</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/1200x/f2/13/1c/f2131cad1348c82a28d1a922275c9c7d.jpg"><span class="item-name">Sharja Shake</span><span class="dots"></span><span class="price">₹215</span></li>
-                </ul>
-            </div>
+          <!-- Right Column -->
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-5">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/c2/6f/a3/c26fa36d3c7b05a023d4c6e1bbe9d634.jpg"
+                /><span class="item-name">Strawberry Shake</span
+                ><span class="dots"></span><span class="price">₹155</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/31/bf/77/31bf777602109d6a3805740295cf1641.jpg"
+                /><span class="item-name">Blueberry Shake</span
+                ><span class="dots"></span><span class="price">₹175</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/b9/4a/43/b94a43544f93cb8cb71e6ad80b0d35ab.jpg"
+                /><span class="item-name">Black Currant Shake</span
+                ><span class="dots"></span><span class="price">₹185</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/c0/cc/d9/c0ccd9a62dc11e28420b16752fbc7088.jpg"
+                /><span class="item-name">Fudge Brownie Shake</span
+                ><span class="dots"></span><span class="price">₹185</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/1200x/f2/13/1c/f2131cad1348c82a28d1a922275c9c7d.jpg"
+                /><span class="item-name">Sharja Shake</span
+                ><span class="dots"></span><span class="price">₹215</span>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Showcase Section -->
-<section class="showcase-wrapper">
-  <div class="showcase-backdrop">
-    <h1 class="showcase-title">Enjoy in good taste and live life</h1>
-    <p class="showcase-text">
-      Step into a world of flavors where every bite tells a story, every aroma sparks joy, 
-      and every meal is crafted to create moments you’ll remember long after the last bite.
-    </p>
-    <a href="#" class="showcase-button">Book a Table</a>
-  </div>
-</section>
+    <!-- Showcase Section -->
+    <section class="showcase-wrapper">
+      <div class="showcase-backdrop">
+        <h1 class="showcase-title">Enjoy in good taste and live life</h1>
+        <p class="showcase-text">
+          Step into a world of flavors where every bite tells a story, every
+          aroma sparks joy, and every meal is crafted to create moments you’ll
+          remember long after the last bite.
+        </p>
+        <a href="#" class="showcase-button">Book a Table</a>
+      </div>
+    </section>
 
-<section class="menu-section">
-    <div class="container">
+    <section class="menu-section">
+      <div class="container">
         <h2 class="menu-heading text-center">Beverages/Dessert</h2>
-        <div class="mx-auto" style="background-color:#cc5500; height:2px; width:170px;"></div>
+        <div
+          class="mx-auto"
+          style="background-color: #cc5500; height: 2px; width: 170px"
+        ></div>
         <p class="menu-subheading text-center"></p>
 
         <div class="row">
-            <!-- Left Column -->
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-5">
-                <ul class="menu-list">
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/1a/7f/30/1a7f301a77551580495109372810d18a.jpg"><span class="item-name">Ice-Cream</span><span class="dots"></span><span class="price">₹100</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/1200x/a1/b8/59/a1b8598e7082c2834c0bcc1cab1f315e.jpg"><span class="item-name">Hot Gulab Jamun</span><span class="dots"></span><span class="price">₹120</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/38/9f/d8/389fd85bffd76911ca52bdb4edcc4a93.jpg"><span class="item-name">Brownie with Ice Cream</span><span class="dots"></span><span class="price">₹215</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/1200x/7c/a6/54/7ca65499d4a7d6ee290c2edd656a46f2.jpg"><span class="item-name">Masala Chai</span><span class="dots"></span><span class="price">₹49</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/1200x/df/ac/23/dfac23d9b0d543c07e4daad7db6c1671.jpg"><span class="item-name">Filter Kappi</span><span class="dots"></span><span class="price">₹69</span></li>
-                </ul>
-            </div>
+          <!-- Left Column -->
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 mt-5">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/1a/7f/30/1a7f301a77551580495109372810d18a.jpg"
+                /><span class="item-name">Ice-Cream</span
+                ><span class="dots"></span><span class="price">₹100</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/1200x/a1/b8/59/a1b8598e7082c2834c0bcc1cab1f315e.jpg"
+                /><span class="item-name">Hot Gulab Jamun</span
+                ><span class="dots"></span><span class="price">₹120</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/38/9f/d8/389fd85bffd76911ca52bdb4edcc4a93.jpg"
+                /><span class="item-name">Brownie with Ice Cream</span
+                ><span class="dots"></span><span class="price">₹215</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/1200x/7c/a6/54/7ca65499d4a7d6ee290c2edd656a46f2.jpg"
+                /><span class="item-name">Masala Chai</span
+                ><span class="dots"></span><span class="price">₹49</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/1200x/df/ac/23/dfac23d9b0d543c07e4daad7db6c1671.jpg"
+                /><span class="item-name">Filter Kappi</span
+                ><span class="dots"></span><span class="price">₹69</span>
+              </li>
+            </ul>
+          </div>
 
-            <!-- Right Column -->
-            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-                <ul class="menu-list">
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/16/1d/53/161d5331148543551ef3f4893e8d435a.jpg"><span class="item-name">Butter Milk</span><span class="dots"></span><span class="price">₹85</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/4e/98/6b/4e986bc30b7f037d12c74e29decd8c48.jpg"><span class="item-name">Lassi (Sweet/Salted)</span><span class="dots"></span><span class="price">₹95</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/1200x/75/c4/5e/75c45e402c275d578b7ba7c3dd2dc283.jpg"><span class="item-name">Cold Coffee</span><span class="dots"></span><span class="price">₹155</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/c5/43/c1/c543c1b8c1524e2780e8692cd7ccaa0f.jpg"><span class="item-name">Cold Coffee With Ice Cream</span><span class="dots"></span><span class="price">₹185</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/736x/64/bb/bc/64bbbc45a302b646abee022c00ca0c41.jpg"><span class="item-name">Iced Tea (Strawberry/Lemon)</span><span class="dots"></span><span class="price">₹185</span></li>
-                    <li class="menu-item"><img src="https://i.pinimg.com/1200x/11/66/35/116635cd3373a3bc15fd060b9fe9c7f3.jpg"><span class="item-name">Mineral Water</span><span class="dots"></span><span class="price">₹MRP</span></li>
-                </ul>
-            </div>
+          <!-- Right Column -->
+          <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+            <ul class="menu-list">
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/16/1d/53/161d5331148543551ef3f4893e8d435a.jpg"
+                /><span class="item-name">Butter Milk</span
+                ><span class="dots"></span><span class="price">₹85</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/4e/98/6b/4e986bc30b7f037d12c74e29decd8c48.jpg"
+                /><span class="item-name">Lassi (Sweet/Salted)</span
+                ><span class="dots"></span><span class="price">₹95</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/1200x/75/c4/5e/75c45e402c275d578b7ba7c3dd2dc283.jpg"
+                /><span class="item-name">Cold Coffee</span
+                ><span class="dots"></span><span class="price">₹155</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/c5/43/c1/c543c1b8c1524e2780e8692cd7ccaa0f.jpg"
+                /><span class="item-name">Cold Coffee With Ice Cream</span
+                ><span class="dots"></span><span class="price">₹185</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/736x/64/bb/bc/64bbbc45a302b646abee022c00ca0c41.jpg"
+                /><span class="item-name">Iced Tea (Strawberry/Lemon)</span
+                ><span class="dots"></span><span class="price">₹185</span>
+              </li>
+              <li class="menu-item">
+                <img
+                  src="https://i.pinimg.com/1200x/11/66/35/116635cd3373a3bc15fd060b9fe9c7f3.jpg"
+                /><span class="item-name">Mineral Water</span
+                ><span class="dots"></span><span class="price">₹MRP</span>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-</section>
-
-    <!-- Reservation Section -->
-    <section id="reservation" class="reservation-section">
-        <div class="reservation-overlay"></div>
-        <div class="container text-center text-white">
-            <h2 class="font-weight-bold">Make a Reservation</h2>
-            <p class="reservation-intro">Reserve your table at our cozy café in just a few steps.</p>
-            <p class="reservation-intro mb-5">Enjoy handcrafted brews and delicious bites—let us save you a spot.</p>
-
-            <div class="reservation-form-wrapper d-flex justify-content-center">
-                <form class="reservation-form" novalidate>
-                    <!-- Name: only letters and spaces -->
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Full Name" pattern="[A-Za-z\s]+"
-                            title="Only letters and spaces allowed" required>
-                    </div>
-
-                    <!-- Date -->
-                    <div class="form-group">
-                        <input type="date" class="form-control" required>
-                    </div>
-
-                    <!-- Seats: only numbers -->
-                    <div class="form-group">
-                        <input type="number" class="form-control" placeholder="Number of Seats" min="1" step="1"
-                            required>
-                    </div>
-
-                    <!-- Phone: exactly 10 digits -->
-                    <div class="form-group">
-                        <input type="tel" class="form-control" placeholder="Phone Number" pattern="[0-9]{10}"
-                            title="Enter a 10-digit phone number" required>
-                    </div>
-
-                    <!-- Email -->
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Email Address" required>
-                    </div>
-
-                    <!-- Submit -->
-                    <button type="submit" class="btn btn-light btn-block font-weight-bold">Make a Reservation</button>
-                </form>
-            </div>
-        </div>
+      </div>
     </section>
-
-    <!-- MAP SECTION -->
-    <section class="map-section">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19817.81452869725!2d-0.1195433!3d51.503324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487604b1de1c1c21%3A0x42a5dd86e9b8f52a!2sLondon%20Eye!5e0!3m2!1sen!2suk!4v1691681888888"
-            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </section>
-
-    <!-- INFO SECTION -->
-    <section class="info-section">
-        <div class="info-container">
-
-            <!-- Block 1 -->
-            <div class="info-block info-dark">
-                <h4>Planning To Visit?</h4>
-                <p>
-                    We're here to assist you in planning your visit. Whether you have questions or need directions, feel
-                    free to
-                    reach out anytime.
-                </p>
-                <a href="#" class="btn-contact">Contact Us</a>
-            </div>
-
-            <!-- Block 2 -->
-            <div class="info-block info-light">
-                <h4>Opening Time</h4>
-                <p><strong>Working Days</strong><br>9:00AM – 6:00PM</p>
-                <hr>
-                <p><strong>Saturday</strong><br>11:00AM – 5:00PM</p>
-                <hr>
-                <p><strong>Sunday</strong><br>Closed</p>
-            </div>
-
-            <!-- Block 3 -->
-            <div class="info-block info-light">
-                <h4>Get In Touch</h4>
-                <p>+123 456 7890<br>info@example.com</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
     <section class="newsletter-section">
-        <div class="container text-center py-5">
-            <h2 class="text-white font-weight-bold">Get News & Offers</h2>
-            <p class="text-white">It is a long established fact that a reader will be distracted by the readable content
-                of a
-                page when looking at its layout.</p>
-            <a href="#" class="btn btn-warning mt-3 px-4">Contact Us</a>
-        </div>
+      <div class="container text-center py-5">
+        <h2 class="text-white font-weight-bold">Get News & Offers</h2>
+        <p class="text-white">
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout.
+        </p>
+        <a href="#" class="btn btn-warning mt-3 px-4">Contact Us</a>
+      </div>
     </section>
     <!-- Footer -->
     <footer class="site-footer text-center py-4">
-        <div class="container">
-            <p class="mb-0 text-white">Copyright © 2025
-                <a href="#" class="text-light">thespiceofsouth</a>
-            </p>
-        </div>
+      <div class="container">
+        <p class="mb-0 text-white">
+          Copyright © 2025
+          <a href="#" class="text-light">thespiceofsouth</a>
+        </p>
+      </div>
     </footer>
-
-    <script>
-        // Allow only letters and spaces in name
-        document.querySelector('input[placeholder="Full Name"]').addEventListener('input', function () {
-            this.value = this.value.replace(/[^A-Za-z\s]/g, '');
-        });
-
-        // Allow only digits in phone number
-        document.querySelector('input[placeholder="Phone Number"]').addEventListener('input', function () {
-            this.value = this.value.replace(/[^0-9]/g, '');
-        });
-    </script>
-
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,320 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.playfair-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Navbar height */
+.custom-navbar {
+    height: 20vh;
+}
+
+/* Logo height */
+.logo-img {
+    max-height: 90%;
+}
+
+/* Nav link styles */
+.navbar-nav .nav-link {
+    font-size: 1.5rem;
+    margin-left: 20px;
+    color: #000;
+    transition: color 0.2s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #fc6f51 !important;
+}
+
+/* Button style */
+.btn-reserve {
+    background-color: #fc6f51;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.05rem;
+    text-decoration: none;
+}
+
+.btn-reserve:hover {
+    background-color: #e85c42;
+    color: white;
+}
+
+/* Toggler icon (black color) */
+.navbar-toggler-icon.custom-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Collapsed menu style */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        max-height: 80vh;
+        /* limit height */
+        overflow-y: auto;
+        /* allow scrolling if content exceeds */
+        background-color: white;
+        padding: 1rem 0;
+        text-align: center;
+        z-index: 9999;
+        /* ensures it appears above other items */
+    }
+
+    body,
+    html {
+        overflow-y: auto;
+        /* ensures scroll works */
+    }
+
+    .navbar-collapse.collapse.show {
+        max-height: 100vh;
+        overflow-y: auto;
+    }
+
+    .navbar-nav .nav-link {
+        color: black !important;
+        padding: 10px 0;
+        font-size: 1.1rem;
+    }
+
+    .navbar-nav .btn-reserve {
+        display: inline-block;
+        margin-top: 10px;
+    }
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.menu-list .nav-link {
+    font-size: 1.2rem;
+    color: #000;
+    font-weight: 400;
+    margin-bottom: 10px;
+    transition: color 0.2s ease;
+}
+
+.menu-list .nav-link:hover,
+.menu-list .nav-link.active {
+    color: #cc5500 !important;
+    /* Burnt orange */
+    font-weight: 500;
+}
+
+.playfair-font {
+    font-family: 'Playfair Display', serif;
+}
+
+/* Remove unwanted white line between sections */
+.newsletter-section {
+    background-color: #1f1f1f;
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 40px;
+}
+
+.site-footer {
+    background-color: #1f1f1f;
+    border-top: none !important;
+    margin-top: 0 !important;
+    padding-top: 20px;
+    color: #ccc;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure no hidden <hr> or borders elsewhere */
+hr,
+.divider {
+    display: none;
+    border: none;
+    height: 0;
+}
+
+.contact-info {
+    background-color: white;
+    color: black;
+    height: 75vh;
+}
+
+.btn-burnt-orange {
+    background-color: #FF6F47;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-burnt-orange:hover {
+    background-color: #e65b35;
+    color: white;
+}
+
+hr {
+    border-top: 2px dotted #ddd;
+    margin: 8px 0;
+}
+
+.social-icon {
+    color: black;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #555;
+}
+
+.get-direction {
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.about-section {
+    background: url('about.jpg') center/cover no-repeat;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.about-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.col {
+    flex: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.center-content {
+    flex: 2;
+    text-align: center;
+    color: white;
+}
+
+.center-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.center-content p {
+    font-size: 1.125rem;
+    line-height: 1.75;
+}
+
+@media (max-width: 768px) {
+    .col {
+        flex: 1 1 100%;
+    }
+
+    .spacer {
+        display: none;
+    }
+
+    .center-content {
+        flex: 1;
+    }
+}
+
+.talk-area {
+    background-color: #fff;
+    padding: 40px 0;
+    height: 95vh;
+}
+
+.talk-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.talk-form-box {
+    padding: 40px;
+    background-color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    /* Added shadow */
+    border-radius: 8px;
+    /* Slight rounding for a softer look */
+}
+
+.talk-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.talk-text {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.talk-input {
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    width: 100%;
+}
+
+.talk-btn {
+    background-color: #FF6F47;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.talk-btn:hover {
+    background-color: #e65b35;
+    color: white;
+}
+
+.talk-input {
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.3s ease;
+}

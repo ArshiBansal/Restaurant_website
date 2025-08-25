@@ -1,3 +1,31 @@
+<?php
+if (isset($_POST['submit'])) {
+    $name = $_POST['name'];        // Full Name
+    $contact = $_POST['contact'];  // Contact (phone/email)
+    $visit_date = $_POST['visit_date'];
+    $rating = $_POST['rating'];
+    $message = $_POST['message'];
+
+    $servername = "localhost";
+    $username = "root";
+    $dbpassword = "";
+    $dbname = "thespiceofsouth";
+
+    // Create connection
+    $conn = new mysqli($servername, $username, $dbpassword, $dbname);
+
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    // Insert feedback data
+    $sql = "INSERT INTO feedback (name, contact, visit_date, rating, message) 
+            VALUES ('$name', '$contact', '$visit_date', '$rating', '$message')";
+
+    $conn->close();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,6 +49,116 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="testimonials.css">
+    <style>
+        /* Section background */
+        .feedback-section {
+            position: relative;
+            background: url('https://i.pinimg.com/736x/4d/b7/d3/4db7d318d6437d172b6c98766ea4fb38.jpg') center center/cover no-repeat;
+            height: 100vh;
+            /* full screen */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .feedback-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
+            z-index: 1;
+        }
+
+        /* Ensure content is above overlay */
+        .feedback-section .container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        /* Header text */
+        .feedback-header {
+            flex: 0 0 25%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        /* Form wrapper */
+        .feedback-form-wrapper {
+            flex: 0 0 50%;
+            /* form occupies 60vh of section */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Feedback form box */
+        .feedback-form {
+            background-color: #f88379;
+            height: 480px;
+            /* exactly 60vh */
+            width: 375px;
+            border-radius: 8px;
+            padding: 20px;
+            overflow-y: hidden;
+        }
+
+        /* Labels inline with inputs */
+        .feedback-form .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .form-group {
+            width: 315px;
+        }
+
+        /* Labels */
+        .feedback-form .form-label {
+            color: #fff;
+            font-weight: 500;
+            width: 120px;
+            /* fixed label width */
+            margin-right: 10px;
+            text-align: left;
+        }
+
+        /* Inputs + Textareas */
+        .feedback-form .form-control {
+            background-color: #f88379;
+            border: 2px solid #fff;
+            color: #fff;
+            border-radius: 5px;
+            padding: 10px;
+            width: 100%;
+            outline: none;
+        }
+
+        /* Placeholder styling */
+        .feedback-form .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        /* Focus effect */
+        .feedback-form .form-control:focus {
+            border-color: #fff;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        }
+
+        /* Submit button */
+        .feedback-form button {
+            margin-top: 15px;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,7 +180,7 @@
             <div class="collapse navbar-collapse justify-content-end" id="navContent">
                 <ul class="navbar-nav align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="home.html">Home</a>
+                        <a class="nav-link" href="index.php">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -54,7 +192,7 @@
                         <a class="nav-link active text-highlight" href="#">Testimonials</a>
                     </li>
                     <li class="nav-item mr-10">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.php">Contact</a>
                     </li>
                     <li class="nav-item ml-7">
                         <a href="#" class="btn btn-reserve">Make a Reservation</a>
@@ -87,9 +225,11 @@
             </div>
         </div>
     </section>
-
+    <center>
+        <h1 style="margin-top: 50px; font-size:40px; font-weight:400;">What Our Client Says</h1>
+    </center>
     <section>
-        <div class="container-fluid py-5">
+        <div class="container-fluid" style="margin-top: 175px; margin-bottom: 75px;">
 
             <!-- Row 1 -->
             <div class="row mb-5">
@@ -182,33 +322,34 @@
 
             <!-- Feedback Form -->
             <div class="feedback-form-wrapper d-flex justify-content-center">
-                <form class="feedback-form p-4 mb-5" novalidate>
+                <form class="feedback-form p-4 mb-5" method="POST" action="" novalidate>
 
                     <!-- Name -->
-                    <div class="form-group d-flex align-items-center">
-                        <label for="name" class="form-label">Full Name</label>
-                        <input type="text" id="name" class="form-control" placeholder="Enter your full name"
+                    <div class="form-group d-flex align-items-center mb-3">
+                        <label for="name" class="form-label me-3" style="width: 150px;">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-control"
+                            placeholder="Enter your full name"
                             pattern="[A-Za-z\s]+" title="Only letters and spaces allowed" required>
                     </div>
 
                     <!-- Contact -->
-                    <div class="form-group d-flex align-items-center">
-                        <label for="contact" class="form-label">Contact</label>
-                        <input type="text" id="contact" class="form-control" placeholder="Phone"
-                            pattern="([0-9]{10}|[^@\s]+@[^@\s]+\.[^@\s]+)"
-                            title="Enter a valid 10-digit phone number or email address" required>
+                    <div class="form-group d-flex align-items-center mb-3">
+                        <label for="contact" class="form-label me-3" style="width: 150px;">Contact</label>
+                        <input type="text" id="contact" name="contact" class="form-control"
+                            placeholder="Phone (10 digits)"
+                            pattern="[0-9]{10}" title="Enter a valid 10-digit phone number" required>
                     </div>
 
                     <!-- Visit Date -->
-                    <div class="form-group d-flex align-items-center">
-                        <label for="visit-date" class="form-label">Visit Date</label>
-                        <input type="date" id="visit-date" class="form-control" required>
+                    <div class="form-group d-flex align-items-center mb-3">
+                        <label for="visit-date" class="form-label me-3" style="width: 150px;">Visit Date</label>
+                        <input type="date" id="visit-date" name="visit_date" class="form-control" required>
                     </div>
 
                     <!-- Overall Rating -->
-                    <div class="form-group d-flex align-items-center">
-                        <label for="rating" class="form-label">Overall Rating</label>
-                        <select id="rating" class="form-control" required>
+                    <div class="form-group d-flex align-items-center mb-3">
+                        <label for="rating" class="form-label me-3" style="width: 150px;">Overall Rating</label>
+                        <select id="rating" name="rating" class="form-control" required>
                             <option value="">Select</option>
                             <option value="1">1 - Poor</option>
                             <option value="2">2 - Fair</option>
@@ -219,14 +360,16 @@
                     </div>
 
                     <!-- Message -->
-                    <div class="form-group d-flex align-items-start">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea id="message" class="form-control" rows="3" placeholder="Write your feedback here"
-                            required></textarea>
+                    <div class="form-group d-flex align-items-start mb-3">
+                        <label for="message" class="form-label me-3" style="width: 150px;">Message</label>
+                        <textarea id="message" name="message" class="form-control" rows="3"
+                            placeholder="Write your feedback here" required></textarea>
                     </div>
 
                     <!-- Submit -->
-                    <button type="submit" class="btn btn-light btn-block font-weight-bold">Submit Feedback</button>
+                    <button type="submit" name="submit" class="btn btn-light btn-block font-weight-bold">
+                        Submit Feedback
+                    </button>
                 </form>
             </div>
         </div>
@@ -301,12 +444,12 @@
     <!-- Validation Script -->
     <script>
         // Restrict name to only alphabets + spaces
-        document.getElementById('name').addEventListener('input', function () {
+        document.getElementById('name').addEventListener('input', function() {
             this.value = this.value.replace(/[^A-Za-z\s]/g, '');
         });
 
         // Restrict phone to only numbers
-        document.getElementById('contact').addEventListener('input', function () {
+        document.getElementById('contact').addEventListener('input', function() {
             this.value = this.value.replace(/[^0-9]/g, '');
         });
     </script>
